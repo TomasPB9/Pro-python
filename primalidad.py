@@ -1,4 +1,4 @@
-def primalidad(num):
+def primalidad(num:int) -> bool:
     conteo = 0
     for i in range(1,num+1):
         #print(i)
@@ -7,13 +7,17 @@ def primalidad(num):
         else:
             continue
     if conteo>2:
-        print("No es primo")
+        #print("No es primo")
+        return False
     else:
-        print("Si es primo !!!")
+        #print("Si es primo !!!")
+        return True
 
 def run():
-    num = int(input("Ingresa un numero: "))
-    primalidad(num)
+    #num = int(input("Ingresa un numero: "))
+    #primalidad(num)
+
+    print(primalidad(29))
 
 
 
