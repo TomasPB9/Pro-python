@@ -30,6 +30,27 @@ random_fun()
 suma(5, 5)
 saludos()
 
+#-----------------------------------------------------------
+#free challenge with decorators
+print("")
+print("challenge with decorator")
+print("")
+
+def decorador(func):
+    def inserta_msg():
+        print("Esto inserta un mensaje")
+        func()
+        print("Esto inserta un mensaje 2∫")
+    return inserta_msg
+
+@decorador
+def harry():
+    print("Yo soy harry")
+
+
+harry()
+
+
 def run():
     pass
 
