@@ -43,12 +43,13 @@ def decorador(func):
         print("Mensaje 2 desde DECORADOR ")
     return inserta_msg
 
-@decorador
+@decorador   #con sugar sintax
 def harry():
     print("Mensaje desde la funcion original")
 
+# harry = decorador(harry)  ------ sin sugar sintax
 
-harry()
+harry()   #execute function
 
 
 def run():
