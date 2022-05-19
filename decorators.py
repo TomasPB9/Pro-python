@@ -52,6 +52,48 @@ def harry():
 harry()   #execute function
 
 
+#challenge 2 -------------------------------------
+print("")
+print("Challenge 2 ------------")
+print("")
+
+
+
+def decorator_2(func):
+    def all_upper(name):
+        print("Hola : " + name.upper())
+        
+    return all_upper
+
+@decorator_2
+def names(name):
+    pass
+
+names("Tomas")
+
+
+
+#challenge 3 -------------------------------------
+print("")
+print("Challenge 3 ------------")
+print("")
+
+def decorator_3(func):
+    def wrapper(name):
+        func(name)
+        func(name.upper())
+        func(name.lower())
+        print("edfgegr")
+    return wrapper
+
+@decorator_3
+def challenge_3(name):
+    print("Holaaaaa " + name)
+
+
+challenge_3("Carlos")
+
+
 def run():
     pass
 
