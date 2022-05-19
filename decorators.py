@@ -38,14 +38,14 @@ print("")
 
 def decorador(func):
     def inserta_msg():
-        print("Esto inserta un mensaje")
+        print("Mensaje 1 desde DECORADOR ")
         func()
-        print("Esto inserta un mensaje 2∫")
+        print("Mensaje 2 desde DECORADOR ")
     return inserta_msg
 
 @decorador
 def harry():
-    print("Yo soy harry")
+    print("Mensaje desde la funcion original")
 
 
 harry()
