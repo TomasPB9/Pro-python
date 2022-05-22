@@ -1,5 +1,7 @@
 def mayusculas(func):
-    def envoltura(texto):
+    #Función anidada (la nested function debe recibir los mismos parametros que la funcion que estamos 
+    # decorando)
+    def envoltura(texto):  
         return func(texto).upper()
     return envoltura
 
